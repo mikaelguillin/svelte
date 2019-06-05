@@ -265,7 +265,7 @@ export default class Stylesheet {
 		this.dev = dev;
 
 		if (ast.css && ast.css.children.length) {
-			this.id = `svelte-${hash(ast.css.content.styles)}`;
+			this.id = `svelte-${hash(filename)}`;
 
 			this.has_styles = true;
 
